@@ -1,0 +1,98 @@
+/*   #1b75bb  синий оттенок */
+/*   #25a9e0  голубой оттенок */
+
+.btn-secondary{
+    border: 2px solid #1b75bb;
+    background-color: #1b75bb;
+}
+
+.btn-outline-primary{
+    border: 2px solid #1b75bb;
+    color: #1b75bb;
+}
+.btn-outline-primary:hover{
+    background-color: #1b75bb;
+    border: 2px solid #1b75bb;
+}
+
+
+* {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.logo {
+    height: 65px;
+    transition: 0.3s linear;
+    cursor: pointer;
+}
+.logo:hover{
+    transform: scale(1.1);
+}
+
+.logoTextGorod {
+    color: #25a9e0;
+    font-weight: 700;   
+}
+.logoTextDomov{
+    color: #1b75bb;
+    font-weight: 700; 
+}
+
+nav a {
+    color: black;
+    font-weight: 600;
+    line-height: 1;
+    text-decoration: none;
+    cursor: pointer;
+    position: relative;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: #1b75bb;
+}
+
+nav a:after {
+    display: block;
+    position: absolute;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: #1b75bb;
+    content: "";
+    transition: width 0.3s ease-out;
+}
+
+nav a:hover:after,
+nav a:focus:after {
+    width: 100%;
+}
+
+.wrap {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  overflow:hidden;
+    filter: brightness(50%);
+}
+
+.wrap video{
+    box-sizing: border-box;
+  min-width: 100%;
+  min-height: 100%;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%)
+}
+.card{
+    z-index: 20;
+}
+.headerWrap{
+    z-index: 20;
+}
+zindex{
+    z-index: 20;
+}
