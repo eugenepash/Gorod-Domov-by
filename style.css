@@ -1,6 +1,28 @@
 /*   #1b75bb  синий оттенок */
 /*   #25a9e0  голубой оттенок */
 
+
+@media (min-width: 0px) and (max-width: 999px) {
+    .navPC{
+        display: none;
+    }
+    .navMobile{
+        display: flex;
+    }
+}
+@media (min-width: 1000px) {
+    
+    .navMobile{
+        display: none;
+    }
+    .navPC{
+        display: flex;
+    }
+}
+
+.navMobileContent{
+    z-index: 20;
+}
 .btn-secondary{
     border: 2px solid #1b75bb;
     background-color: #1b75bb;
@@ -70,12 +92,14 @@ nav a:focus:after {
 
 .wrap {
   position: absolute;
-  top: 0;
+  top: 81;
   left: 0;
   right: 0;
   bottom: 0;
   overflow:hidden;
-    filter: brightness(50%);
+    
+    z-index: -2;
+    filter: brightness(40%);
 }
 
 .wrap video{
@@ -95,4 +119,9 @@ nav a:focus:after {
 }
 zindex{
     z-index: 20;
+}
+
+.navMobile{
+    z-index: 10;
+    display: block;
 }

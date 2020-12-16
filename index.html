@@ -11,19 +11,48 @@
 </head>
 
 <body>
+
+
     <!--   NAVIGATION  ------------------------------------------------>
-    <nav class="site-header sticky-top py-2 bg-light shadow text-center">
+    <nav class="navPC site-header sticky-top py-2 bg-light shadow text-center">
         <div class="container">
             <div class="row">
                 <div class="col-1 d-flex align-items-center">
                     <img class="logo m-1" src="assets/images/logo.png" alt="logo">
-
                 </div>
                 <div class="col-3 d-flex align-items-center justify-content-start m-0 p-0">
                     <h5 class="logoTextGorod ml-2 m-0 p-0">GOROD</h5>
                     <h5 class="logoTextDomov ml-2 m-0 p-0">DOMOV</h5>
                 </div>
-                <div class="col-8 d-flex align-items-center justify-content-end">
+                    <div class="col-8 d-flex align-items-center justify-content-end">
+                        <a class="py-2 d-md-inline-block m-3 text-decoration-none" href="#">Главная</a>
+                        <a class="py-2 d-md-inline-block m-3 text-decoration-none" href="#">Услуги</a>
+                        <a class="py-2 d-md-inline-block m-3 text-decoration-none" href="#">Наши работы</a>
+                        <a class="py-2 d-md-inline-block m-3 text-decoration-none" href="#">Стоимость работ</a>
+                        <a class="py-2 d-md-inline-block m-3 text-decoration-none" href="#">Отзывы</a>
+                        <a class="py-2 d-md-inline-block m-3 text-decoration-none" href="#">Контакты</a>
+                </div>
+            </div>
+
+        </div>
+
+    </nav>
+    <!--   mobile navigation-->
+
+<div class="navMobile sticky-top d-md-none d-lg-none">
+    <nav class="navbar site-header navbar-light bg-light m-0 p-4 shadow">
+        <div class="container-fluid d-flex justify-content-start">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="col-3 d-flex align-items-center justify-content-start m-0 p-0">
+                <h5 class="logoTextGorod ml-2 m-0 p-0">GOROD</h5>
+                <h5 class="logoTextDomov ml-2 m-0 p-0">DOMOV</h5>
+            </div>
+        </div>
+        <div class="collapse py-2 bg-light mt-3 text-center" id="navbarToggleExternalContent">
+            <div class="bg-light p-4">
+                <div class="col-8 d-flex align-items-start flex-column justify-content-start">
                     <a class="py-2 d-md-inline-block m-3 text-decoration-none" href="#">Главная</a>
                     <a class="py-2 d-md-inline-block m-3 text-decoration-none" href="#">Услуги</a>
                     <a class="py-2 d-md-inline-block m-3 text-decoration-none" href="#">Наши работы</a>
@@ -34,6 +63,12 @@
             </div>
         </div>
     </nav>
+    
+    </div>
+
+
+
+
     <!--   cancel NAVIGATION  --------------------------------------->
 
     <!--   MAIN ------------------------------------------------------->
@@ -41,7 +76,7 @@
         <div class="cover-container w-100 h-100 d-flex justify-content-center align-items-center flex-column">
             <h1 class="headerWrap text-light ">Возможно всё! На невозможное нужно больше времени.</h1>
             <h4 class="headerWrap text-light">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</h4>
-            <button type="button" class="btn btn-light text-dark zindex"></button>
+            <button type="button" class="btn btn-light text-dark zindex">Перейти</button>
             <div class="wrap">
 
                 <video class="playerVideo" playsinline="" autoplay="" muted="" loop="">
@@ -51,7 +86,7 @@
         </div>
 
         <div class="row mb-4">
-            <div class="col-lg-4">
+            <div class="col-lg-4 mb-4">
                 <svg width="8em" height="8em" viewBox="0 0 16 16" class="bi bi-gear" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
                     <path fill-rule="evenodd" d="M8.837 1.626c-.246-.835-1.428-.835-1.674 0l-.094.319A1.873 1.873 0 0 1 4.377 3.06l-.292-.16c-.764-.415-1.6.42-1.184 1.185l.159.292a1.873 1.873 0 0 1-1.115 2.692l-.319.094c-.835.246-.835 1.428 0 1.674l.319.094a1.873 1.873 0 0 1 1.115 2.693l-.16.291c-.415.764.42 1.6 1.185 1.184l.292-.159a1.873 1.873 0 0 1 2.692 1.116l.094.318c.246.835 1.428.835 1.674 0l.094-.319a1.873 1.873 0 0 1 2.693-1.115l.291.16c.764.415 1.6-.42 1.184-1.185l-.159-.291a1.873 1.873 0 0 1 1.116-2.693l.318-.094c.835-.246.835-1.428 0-1.674l-.319-.094a1.873 1.873 0 0 1-1.115-2.692l.16-.292c.415-.764-.42-1.6-1.185-1.184l-.291.159A1.873 1.873 0 0 1 8.93 1.945l-.094-.319zm-2.633-.283c.527-1.79 3.065-1.79 3.592 0l.094.319a.873.873 0 0 0 1.255.52l.292-.16c1.64-.892 3.434.901 2.54 2.541l-.159.292a.873.873 0 0 0 .52 1.255l.319.094c1.79.527 1.79 3.065 0 3.592l-.319.094a.873.873 0 0 0-.52 1.255l.16.292c.893 1.64-.902 3.434-2.541 2.54l-.292-.159a.873.873 0 0 0-1.255.52l-.094.319c-.527 1.79-3.065 1.79-3.592 0l-.094-.319a.873.873 0 0 0-1.255-.52l-.292.16c-1.64.893-3.433-.902-2.54-2.541l.159-.292a.873.873 0 0 0-.52-1.255l-.319-.094c-1.79-.527-1.79-3.065 0-3.592l.319-.094a.873.873 0 0 0 .52-1.255l-.16-.292c-.892-1.64.902-3.433 2.541-2.54l.292.159a.873.873 0 0 0 1.255-.52l.094-.319z" />
                     <path fill-rule="evenodd" d="M8 5.754a2.246 2.246 0 1 0 0 4.492 2.246 2.246 0 0 0 0-4.492zM4.754 8a3.246 3.246 0 1 1 6.492 0 3.246 3.246 0 0 1-6.492 0z" />
@@ -61,7 +96,7 @@
                 <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. </p>
                 <p><a class="btn btn-secondary" href="#" role="button">View details &raquo;</a></p>
             </div><!-- /.col-lg-4 -->
-            <div class="col-lg-4">
+            <div class="col-lg-4 mb-4">
                 <svg width="8em" height="8em" viewBox="0 0 16 16" class="bi bi-gear" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
                     <path fill-rule="evenodd" d="M8.837 1.626c-.246-.835-1.428-.835-1.674 0l-.094.319A1.873 1.873 0 0 1 4.377 3.06l-.292-.16c-.764-.415-1.6.42-1.184 1.185l.159.292a1.873 1.873 0 0 1-1.115 2.692l-.319.094c-.835.246-.835 1.428 0 1.674l.319.094a1.873 1.873 0 0 1 1.115 2.693l-.16.291c-.415.764.42 1.6 1.185 1.184l.292-.159a1.873 1.873 0 0 1 2.692 1.116l.094.318c.246.835 1.428.835 1.674 0l.094-.319a1.873 1.873 0 0 1 2.693-1.115l.291.16c.764.415 1.6-.42 1.184-1.185l-.159-.291a1.873 1.873 0 0 1 1.116-2.693l.318-.094c.835-.246.835-1.428 0-1.674l-.319-.094a1.873 1.873 0 0 1-1.115-2.692l.16-.292c.415-.764-.42-1.6-1.185-1.184l-.291.159A1.873 1.873 0 0 1 8.93 1.945l-.094-.319zm-2.633-.283c.527-1.79 3.065-1.79 3.592 0l.094.319a.873.873 0 0 0 1.255.52l.292-.16c1.64-.892 3.434.901 2.54 2.541l-.159.292a.873.873 0 0 0 .52 1.255l.319.094c1.79.527 1.79 3.065 0 3.592l-.319.094a.873.873 0 0 0-.52 1.255l.16.292c.893 1.64-.902 3.434-2.541 2.54l-.292-.159a.873.873 0 0 0-1.255.52l-.094.319c-.527 1.79-3.065 1.79-3.592 0l-.094-.319a.873.873 0 0 0-1.255-.52l-.292.16c-1.64.893-3.433-.902-2.54-2.541l.159-.292a.873.873 0 0 0-.52-1.255l-.319-.094c-1.79-.527-1.79-3.065 0-3.592l.319-.094a.873.873 0 0 0 .52-1.255l-.16-.292c-.892-1.64.902-3.433 2.541-2.54l.292.159a.873.873 0 0 0 1.255-.52l.094-.319z" />
                     <path fill-rule="evenodd" d="M8 5.754a2.246 2.246 0 1 0 0 4.492 2.246 2.246 0 0 0 0-4.492zM4.754 8a3.246 3.246 0 1 1 6.492 0 3.246 3.246 0 0 1-6.492 0z" />
@@ -71,7 +106,7 @@
                 <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. </p>
                 <p><a class="btn btn-secondary" href="#" role="button">View details &raquo;</a></p>
             </div><!-- /.col-lg-4 -->
-            <div class="col-lg-4">
+            <div class="col-lg-4 mb-4">
                 <svg width="8em" height="8em" viewBox="0 0 16 16" class="bi bi-gear" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
                     <path fill-rule="evenodd" d="M8.837 1.626c-.246-.835-1.428-.835-1.674 0l-.094.319A1.873 1.873 0 0 1 4.377 3.06l-.292-.16c-.764-.415-1.6.42-1.184 1.185l.159.292a1.873 1.873 0 0 1-1.115 2.692l-.319.094c-.835.246-.835 1.428 0 1.674l.319.094a1.873 1.873 0 0 1 1.115 2.693l-.16.291c-.415.764.42 1.6 1.185 1.184l.292-.159a1.873 1.873 0 0 1 2.692 1.116l.094.318c.246.835 1.428.835 1.674 0l.094-.319a1.873 1.873 0 0 1 2.693-1.115l.291.16c.764.415 1.6-.42 1.184-1.185l-.159-.291a1.873 1.873 0 0 1 1.116-2.693l.318-.094c.835-.246.835-1.428 0-1.674l-.319-.094a1.873 1.873 0 0 1-1.115-2.692l.16-.292c.415-.764-.42-1.6-1.185-1.184l-.291.159A1.873 1.873 0 0 1 8.93 1.945l-.094-.319zm-2.633-.283c.527-1.79 3.065-1.79 3.592 0l.094.319a.873.873 0 0 0 1.255.52l.292-.16c1.64-.892 3.434.901 2.54 2.541l-.159.292a.873.873 0 0 0 .52 1.255l.319.094c1.79.527 1.79 3.065 0 3.592l-.319.094a.873.873 0 0 0-.52 1.255l.16.292c.893 1.64-.902 3.434-2.541 2.54l-.292-.159a.873.873 0 0 0-1.255.52l-.094.319c-.527 1.79-3.065 1.79-3.592 0l-.094-.319a.873.873 0 0 0-1.255-.52l-.292.16c-1.64.893-3.433-.902-2.54-2.541l.159-.292a.873.873 0 0 0-.52-1.255l-.319-.094c-1.79-.527-1.79-3.065 0-3.592l.319-.094a.873.873 0 0 0 .52-1.255l-.16-.292c-.892-1.64.902-3.433 2.541-2.54l.292.159a.873.873 0 0 0 1.255-.52l.094-.319z" />
                     <path fill-rule="evenodd" d="M8 5.754a2.246 2.246 0 1 0 0 4.492 2.246 2.246 0 0 0 0-4.492zM4.754 8a3.246 3.246 0 1 1 6.492 0 3.246 3.246 0 0 1-6.492 0z" />
@@ -156,32 +191,32 @@
                 <p class="lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
             </div>
 
-        
-        <div class="container d-flex flex-column justify-content-center">
-        <div class="col-md-12">
-            <form class="needs-validation " novalidate>
-                <div class="row g-3 d-flex">
-                    <div class="col-sm-12">
-                        <label for="firstName" class="form-label">Ваше имя</label>
-                        <input type="text" class="form-control" id="firstName" placeholder="" value="" required>
-                    </div>
 
-                    <div class="col-sm-12">
-                        <label for="lastName" class="form-label">Ваша фамилия</label>
-                        <input type="text" class="form-control" id="lastName" placeholder="" value="" required>
-                    </div>
+            <div class="container d-flex flex-column justify-content-center">
+                <div class="col-md-12">
+                    <form class="needs-validation " novalidate>
+                        <div class="row g-3 d-flex">
+                            <div class="col-sm-12">
+                                <label for="firstName" class="form-label">Ваше имя</label>
+                                <input type="text" class="form-control" id="firstName" placeholder="" value="" required>
+                            </div>
 
-                    <div class="col-12">
-                        <label for="number" class="form-label">Ваш телефон</label>
-                        <input type="number" class="form-control" id="emnumberail" placeholder="+375 (xx) xxx-xx-xx">
-                    </div>
+                            <div class="col-sm-12">
+                                <label for="lastName" class="form-label">Ваша фамилия</label>
+                                <input type="text" class="form-control" id="lastName" placeholder="" value="" required>
+                            </div>
 
+                            <div class="col-12">
+                                <label for="number" class="form-label">Ваш телефон</label>
+                                <input type="number" class="form-control" id="emnumberail" placeholder="+375 (xx) xxx-xx-xx">
+                            </div>
+
+                        </div>
+                        <button class="btn btn-secondary btn-lg btn-block mt-3">Оставить заявку</button>
+                    </form>
                 </div>
-                <button class="btn btn-secondary btn-lg btn-block mt-3">Оставить заявку</button>
-            </form>
+            </div>
         </div>
-        </div>
-    </div>
     </div>
 
 
