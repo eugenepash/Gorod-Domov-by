@@ -19,12 +19,12 @@
 .logoTextGorod{
     font-weight: 700;
     color: #25a9e0;
-    font-size: 1.5em;
+    font-size: 1.3em;
 }
 .logoTextDomov{
     font-weight: 700;
     color:  #1b75bb;
-    font-size: 1.5em;
+    font-size: 1.3em;
 }
 
 .nav-link{
@@ -40,4 +40,18 @@
 }
 .logo:hover{
     transform: scale(1.1);
+}
+
+.welcomeBlock{
+     background: linear-gradient( rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7) ), url(assets/images/white-space.jpg);
+}
+.gradient-bg-1{
+    background: linear-gradient(90deg, rgba(255,255,255,0) 44%, rgba(248,249,250,1) 82%), url(assets/images/white-space-2.jpg);
+    background-size:contain;
+}
+.divLeft{
+
+}
+.divRight{
+
 }
