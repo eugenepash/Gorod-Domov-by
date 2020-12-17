@@ -1,3 +1,43 @@
 /*   #1b75bb  синий оттенок */
 /*   #25a9e0  голубой оттенок */
+*{
+    font-family: 'Montserrat', sans-serif;
+}
+.btn-primary{
+    background-color: #1b75bb ;
+}
 
+.btn-outline-primary{
+    border: 2px solid #1b75bb;
+    color: #1b75bb;
+}
+.btn-outline-primary:hover{
+    color: white;
+    background-color: #1b75bb;
+    border: 2px solid #1b75bb;
+}
+.logoTextGorod{
+    font-weight: 700;
+    color: #25a9e0;
+    font-size: 1.5em;
+}
+.logoTextDomov{
+    font-weight: 700;
+    color:  #1b75bb;
+    font-size: 1.5em;
+}
+
+.nav-link{
+    font-weight: 600;
+    
+}
+
+.anim-link a:hover{
+    color:  #1b75bb;
+}
+.logo{
+    transition: 0.3s linear;
+}
+.logo:hover{
+    transform: scale(1.1);
+}
