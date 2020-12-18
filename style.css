@@ -1,57 +1,126 @@
 /*   #1b75bb  синий оттенок */
 /*   #25a9e0  голубой оттенок */
-*{
-    font-family: 'Montserrat', sans-serif;
+/*   #f8f9fa  light*/
+/* MF - mobile-font class*/
+
+@media (max-width: 768px) {
+    .navbar-brand span {
+        display: none;
+    }
+    .carousel{
+        display: none;
+    }
+    .mobile-pseudo-carousel{
+        display: block;
+    }
+    .MF{
+        font-size: 1em;
+    }
+    .workBgSm{
+        display: block;
+        color: #f8f9fa;
+    }
 }
-.btn-primary{
-    background-color: #1b75bb ;
+@media (min-width: 768px) {
+    .mobile-pseudo-carousel{
+        display: none;
+    }
+    
 }
 
-.btn-outline-primary{
+
+* {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.btn-primary {
+    background-color: #1b75bb;
+}
+
+.btn-outline-primary {
     border: 2px solid #1b75bb;
     color: #1b75bb;
 }
-.btn-outline-primary:hover{
+
+.btn-outline-primary:hover {
     color: white;
     background-color: #1b75bb;
     border: 2px solid #1b75bb;
 }
-.logoTextGorod{
+
+.logoTextGorod {
     font-weight: 700;
     color: #25a9e0;
     font-size: 1.3em;
 }
-.logoTextDomov{
+
+.logoTextDomov {
     font-weight: 700;
-    color:  #1b75bb;
+    color: #1b75bb;
     font-size: 1.3em;
 }
 
-.nav-link{
+.nav-link {
     font-weight: 600;
-    
+
 }
 
-.anim-link a:hover{
-    color:  #1b75bb;
+.anim-link a:hover {
+    color: #1b75bb;
 }
-.logo{
+
+.logo {
     transition: 0.3s linear;
 }
-.logo:hover{
+
+.logo:hover {
     transform: scale(1.1);
 }
 
-.welcomeBlock{
-     background: linear-gradient( rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7) ), url(assets/images/white-space.jpg);
+.welcomeGradient {
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(assets/images/white-space.jpg);
 }
-.gradient-bg-1{
-    background: linear-gradient(90deg, rgba(255,255,255,0) 44%, rgba(248,249,250,1) 82%), url(assets/images/white-space-2.jpg);
-    background-size:contain;
+.gradient{
+filter: brightness(30%);
 }
-.divLeft{
 
+.workBg {
+    background:linear-gradient(90deg, rgba(248,249,250,0) 43%, rgba(248,249,250,1) 94%) ,url(assets/images/white-space-2.jpg);
+    background-size:cover;
+    background-position: center;
+    
 }
-.divRight{
+.workBgSm{
+    display: none;
+    background:linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)) ,url(assets/images/white-space-2.jpg);
+    background-size:cover;
+    background-position: center;
+}
 
+.numberAchiv{
+    font-weight: 800;
+    color: #25a9e0;
 }
+
+.mobile-pseudo-carousel{
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(assets/images/white-space.jpg);
+}
+
+.logoTextGorodFooter{
+    font-weight: 700;
+    color: #25a9e0;
+    font-size: 1.3em;
+}
+.logoTextDomovFooter{
+    font-weight: 700;
+    color: #1b75bb;
+    font-size: 1.3em;
+}
+footer a{
+    text-decoration: none;
+}
+
+
+
+
+
