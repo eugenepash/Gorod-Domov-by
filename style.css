@@ -2,7 +2,11 @@
 /*   #25a9e0  голубой оттенок */
 /*   #f8f9fa  light*/
 /* MF - mobile-font class*/
-
+@media (max-width: 576px) {
+    .project{
+        display: none;
+    }
+}
 @media (max-width: 768px) {
     .navbar-brand span {
         display: none;
@@ -16,11 +20,8 @@
     .MF{
         font-size: 1em;
     }
-    .workBgSm{
-        display: block;
-        color: #f8f9fa;
-    }
 }
+
 @media (min-width: 768px) {
     .mobile-pseudo-carousel{
         display: none;
@@ -79,24 +80,23 @@
 
 .welcomeGradient {
     background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(assets/images/white-space.jpg);
+    background-attachment: scroll;
+    background-size: cover;
 }
 .gradient{
-filter: brightness(30%);
+filter: brightness(40%);
 }
 
 .workBg {
     background:linear-gradient(90deg, rgba(248,249,250,0) 43%, rgba(248,249,250,1) 94%) ,url(assets/images/white-space-2.jpg);
     background-size:cover;
     background-position: center;
-    
 }
-.workBgSm{
-    display: none;
-    background:linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)) ,url(assets/images/white-space-2.jpg);
+.workBgLeft{
+    background: linear-gradient(90deg, rgba(248,249,250,1) 10%, rgba(255,255,255,0) 90%), url(assets/images/white-space-2.jpg);
     background-size:cover;
     background-position: center;
 }
-
 .numberAchiv{
     font-weight: 800;
     color: #25a9e0;
