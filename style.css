@@ -2,6 +2,7 @@
 /*   #25a9e0  голубой оттенок */
 /*   #f8f9fa  light*/
 /* MF - mobile-font class*/
+/* MFheader - mobile-font заголовок*/
 @media (max-width: 576px) {
     .project{
         display: none;
@@ -19,6 +20,10 @@
     }
     .MF{
         font-size: 1em;
+    }
+    .MFheader{
+        font-size: 1.5em;
+        font-weight: 800;
     }
 }
 
